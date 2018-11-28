@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tugas 1</title>
+</head>
+
+<body>
+    <h1>Formulir</h1>
+    <form>
+        <table width="100%">
+            <tr>
+                <td>Sekolah</td>
+                <td><input type="text" name="Sekolah" value="SMKN 2 Guguak" readonly></td>
+            </tr>
+            <tr>
+                <td width="20%">Nama</td>
+                <td width="80%"><input type="text" name="Nama" required></td>
+            </tr>
+            <tr>
+                <td>NIS</td>
+                <td><input type="text" name="NIS" maxlength="9" required></td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir</td>
+                <td><input type="date" max="2002-01-01" min="1990-01-01" name="tgl-lahir"></td>
+            </tr>
+            <tr>
+                <td>Anak ke</td>
+                <td><input type="number" name="anak" min="1" max="20" step="2" </td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td><input type="radio" name="jk" value="laki" required>Laki-Laki<br><input type="radio" name="jk" value="pr" required>Perempuan</td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td><textarea name="Alamat" placeholder required></textarea></td>
+            </tr>
+            <tr>
+                <td>Agama</td>
+                <td>
+                    <select name="Agama" size="3" multiple>
+                                <option value="Islam">Islam</option>
+                                <option value="Kristen">Kristen</option>
+                                <option value="Khatolik">Khatolik</option>
+                                <option value="Hindu">Hindu</option>
+                                <option value="Budha">Budha</option>
+                            </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Hobi</td>
+                <td><input type="checkbox" name="hobi" value="Sepak bola">Sepak bola<br>
+                    <input type="checkbox" name="hobi" value="Bola voli">Bola voli<br>
+                    <input type="checkbox" name="hobi" value="Renang">Renang<br>
+                    <input type="checkbox" name="hobi" value="Badminton">Badminton
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="Password" required </tr>
+                    <tr>
+                        <td>Foto</td>
+                        <td><input type="file" name="file">
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Kirim">
+                            <input type="reset" value="Reset">
+                        </td>
+                    </tr>
+
+</body>
+
+</html>
